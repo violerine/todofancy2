@@ -35,7 +35,7 @@ export default {
       var routeParamSliced = routeParam.slice(0,idx-1)
       this.taskDate=routeParamSliced
       var replaceSpaces = routeParamSliced.replace(/ /g,"+")
-      axios.delete(`http://localhost:8000/task/delete/${todoId}`)
+      axios.delete(`https://todoserver.gladysefirina.website/task/delete/${todoId}`)
       .then(task=>{
         console.log("DELETED TASK",task)
             this.$store.dispatch('getAllTaskStore',{

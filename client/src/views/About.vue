@@ -45,7 +45,7 @@ export default {
     },
     methods:{
         register(){
-            axios.post("http://localhost:8000/register",{
+            axios.post("https://todoserver.gladysefirina.website/register",{
                 nama: this.nama,
                 username : this.username,
                 password : this.password

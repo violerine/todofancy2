@@ -103,7 +103,7 @@ export default {
       var idx = routeParam.indexOf("(")
       var routeParamSliced = routeParam.slice(0,idx-1)
       var replaceSpaces = routeParamSliced.replace(/ /g,"+")
-      axios.post('http://localhost:8000/task/new',{
+      axios.post('https://todoserver.gladysefirina.website/task/new',{
         userid :userid,
         date : replaceSpaces,
         task: this.todo

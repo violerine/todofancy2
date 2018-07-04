@@ -16,7 +16,7 @@ export default new Vuex.Store({
   actions: {
     getAllTaskStore({commit},payload){
       console.log("OBJ USER ID",payload)
-      axios.get(`http://localhost:8000/task/${payload.userid}/${payload.dateparam}`)
+      axios.get(`https://todoserver.gladysefirina.website/task/${payload.userid}/${payload.dateparam}`)
       .then(({data})=>{
            commit('setTask',data)
       })
